@@ -63,13 +63,15 @@ const EditContact = ({ contacts, EditContact }) => {
   return (
     <div className="container-fluid">
       <div className="row d-flex flex-column">
+        <div className="text-center">
         <button
-          
+          className="btn btn-primary mt-4 mb-4 "
           onClick={() => history.push("/")}
-          style={{margin: '40px 92px 40px 303px', width: '50%'}}
+          style={{width:'50%'}}
         >
         Go back
         </button>
+        </div>
         <div className="col-md-6 mx-auto shadow p-5">
           {currentContact ? (
             <form onSubmit={handleSubmit}>
